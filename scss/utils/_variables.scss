@@ -1,0 +1,63 @@
+/*-----------------------------------------------------------------------------
+								$VARIABLES
+-----------------------------------------------------------------------------*/
+
+
+// Colors
+// -----------------------------------------------------------------------------
+
+$c-white:				    #fff;
+$c-white-darker:     		darken($c-white, 5%);
+$c-black:				    #1c1c1b;
+$c-gray:				    lighten($c-black, 45%);
+$c-gray-darker:		   		lighten($c-black, 25%);
+$c-gray-darkest:     		lighten($c-black, 15%);
+$c-shadow:					rgba(0, 0, 0, .4);
+
+$c-primary:					#e20513;
+$c-primary-darken:			darken($c-primary, 20%);
+$c-primary-lighten:			lighten($c-primary, 20%);
+
+
+// Bran Colors
+$c-facebook:         		#3b5998;
+$c-twitter:          		#55acee;
+$c-instagram:				#833ab4;
+$c-youtube:          		#cd201f;
+
+
+
+
+
+// Typography
+// -----------------------------------------------------------------------------
+
+// Font Weights
+$fw-light:				100;
+$fw-regular:			400;
+$fw-bold:				600;
+
+// Base Fonts
+$ff-base:         		('Lato', sans-serif);
+$fw-base:				$fw-regular;
+$fz-base:				1rem;
+$lh-base:				1.4;
+
+//Header Fonts
+$ff-header:       		('Montserrat', sans-serif);
+$fw-header:				$fw-regular;
+
+// Sizes
+// -----------------------------------------------------------------------------
+
+// Heights
+$h-nav:					6.25em;
+
+
+// Breakpoints
+// -----------------------------------------------------------------------------
+
+$bp-small:			 34em;     //544px
+$bp-medium:          48em;     //768px
+$bp-large:           66em;     //1056px
+$bp-xlarge:          76em;     //1216px

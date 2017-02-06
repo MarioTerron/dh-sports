@@ -1,0 +1,150 @@
+@import 'utils/variables';
+@import 'utils/mixins';
+@import 'utils/functions';
+@import 'utils/breakpoints';
+@import 'base/reset';
+@import 'base/base';
+@import 'base/icons';
+
+
+/*-----------------------------------------------------------------------------
+								$STYLES
+-----------------------------------------------------------------------------*/
+
+.logo {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	height: 3.5em;
+}
+
+// Menu
+// -----------------------------------------------------------------------------
+
+nav {
+	width: 100%;
+	height: $h-nav;
+	transition-duration: .5s;
+	transition-timing-function: ease;
+	background-color: $c-white;
+	overflow: hidden;
+	z-index: 1;
+
+	&.open {
+		height: auto;
+	}
+
+	ul {
+		margin: 0;
+		padding: $h-nav 0 0;
+		text-align: center;
+
+		li {
+			&:hover {
+				background: $c-white-darker;
+			}
+
+			a {
+				display: inline-block;
+				padding: 1.25em;
+				color: $c-gray;
+			}
+		}
+	}
+}
+
+.menu-handler {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 60px;
+	height: 60px;
+	transition-duration: .25s;
+
+	.icon-menu {
+		position: absolute;
+		top: 30px;
+		left: 15px;
+		width: 30px;
+		height: 4px;
+		transition-duration: .25s;
+		background-color: $c-black;
+
+		&::before,
+		&::after {
+			position: absolute;
+			width: 30px;
+			height: 4px;
+			transition-duration: .25s;
+			background-color: $c-black;
+			content: '';
+    	}
+
+		&::before {
+			top: -7px;
+			left: 0;
+    	}
+
+		&::after {
+			top: 7px;
+			left: 0;
+	    }
+	}
+
+	&:hover {
+		cursor: pointer;
+
+		.icon-menu {
+			&::before {
+				top: -10px;
+      		}
+
+			&::after {
+				top: 10px;
+      		}
+    	}
+  	}
+
+	&.open {
+		transform: rotate(180deg);
+		transition-duration: 1s;
+
+		.icon-menu {
+			transition-duration: .5s;
+			background-color: transparent;
+
+			&::before {
+				top: 0;
+				transform: rotate(45deg);
+				transition-duration: .5s;
+	      	}
+
+			&::after {
+				top: 0;
+				transform: rotate(-45deg);
+				transition-duration: .5s;
+	     	}
+	    }
+  	}
+}
+
+/// Cover
+// -----------------------------------------------------------------------------
+
+.cover {
+	position: relative;
+	height: 40rem;
+	background-image: url('/img/header.jpg');
+	background-size: cover;
+
+	h1 {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50% , -50%);
+		color: $c-white;
+		font-weight: $fw-bold;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}

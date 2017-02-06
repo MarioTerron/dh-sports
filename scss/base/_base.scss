@@ -1,0 +1,164 @@
+/*------------------------------------
+    $BASE
+ ------------------------------------*/
+
+
+// Structure
+// -----------------------------------------------------------------------------
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+html {
+	font-size: 100%;
+	text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	color: $c-gray-darker;
+	font-family: $ff-base;
+	font-size: inherit;
+	line-height: 1.5;
+}
+
+// Base Elements
+// -----------------------------------------------------------------------------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, {
+	margin: 0 0 1rem;
+	color: $c-primary;
+	font-family: $ff-header;
+	font-weight: $fw-header;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.75rem;
+}
+
+h4 {
+	font-size: 1.5rem;
+}
+
+h5 {
+	font-size: 1.25rem;
+}
+
+h6 {
+	font-size: 1rem;
+}
+
+small {
+	font-size: .875rem;
+}
+
+ul li {
+	color: $c-black;
+	list-style: none;
+}
+
+ol li {
+	color: $c-black;
+	list-style: none;
+}
+
+strong,
+b {
+	color: $c-black;
+	font-weight: bold;
+}
+
+em,
+i {
+	font-style: italic;
+}
+
+p {
+	margin-bottom: 1rem;
+	color: $c-black;
+	line-height: 1.6rem;
+}
+
+img,
+object,
+embed {
+	max-width: 100%;
+	height: auto;
+}
+
+blockquote {
+	margin: 0 0 1em;
+	padding: 1.5em;
+	background: $c-primary-darken;
+	color: $c-white;
+	font-size: 1.25rem;
+	font-style: italic;
+
+	p {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+
+// Links
+
+a {
+    color: $c-primary;
+    text-decoration: none;
+    cursor: pointer;
+
+	&:hover {
+		color: $c-primary-lighten;
+	}
+
+	// Improve readability when focused and hovered in all browsers: h5bp.com/h
+	&:focus,
+	&:active {
+		outline: none;
+	}
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: $c-primary;
+}
+
+
+// Form
+
+label {
+	font-size: .875rem;
+}
+
+input,
+textarea {
+	width: 100%;
+}
