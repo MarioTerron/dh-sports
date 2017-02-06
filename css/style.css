@@ -2904,15 +2904,13 @@ nav {
         transition-duration: .5s; }
 
 .cover {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 40rem;
-  background-image: url("./img/header.jpg");
+  background-image: url("../img/header.jpg");
   background-size: cover; }
   .cover h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: #fff;
     font-weight: 600;
     text-align: center;
