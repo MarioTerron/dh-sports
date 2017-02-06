@@ -18,6 +18,10 @@
 	height: 3.5em;
 }
 
+.red-title {
+	color: $c-primary-lighten;
+}
+
 // Menu
 // -----------------------------------------------------------------------------
 
@@ -132,10 +136,7 @@ nav {
 // -----------------------------------------------------------------------------
 
 .cover {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
+	position: relative;
 	height: 40rem;
 	background-image: url('../img/header.jpg');
 	background-size: cover;
@@ -143,7 +144,31 @@ nav {
 	h1 {
 		color: $c-white;
 		font-weight: $fw-bold;
+		line-height: 1.2;
 		text-align: center;
 		text-transform: uppercase;
 	}
+
+	p {
+		color: $c-white;
+		font-size: .875em;
+		text-align: center;
+	}
+
+	.description-container {
+		@include wrapper();
+
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+.filter {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: $c-shadow;
+	z-index: 1;
 }
