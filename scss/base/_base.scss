@@ -40,8 +40,8 @@ h3,
 h4,
 h5,
 h6, {
-	margin: 0 0 2rem;
-	color: $c-primary;
+	margin: 2rem 0 1rem;
+	color: $c-black;
 	font-family: $ff-header;
 	font-weight: $fw-header;
 }
@@ -74,15 +74,18 @@ small {
 	font-size: .875rem;
 }
 
-ul li {
-	color: $c-black;
+ul,
+ol {
+	margin: 0;
+	list-style: none;
+
+}
+
+li a {
+	color: $c-gray;
 	list-style: none;
 }
 
-ol li {
-	color: $c-black;
-	list-style: none;
-}
 
 strong,
 b {
@@ -97,7 +100,7 @@ i {
 
 p {
 	margin: 0 0 1rem;
-	color: $c-black;
+	color: $c-gray;
 	line-height: 1.6rem;
 }
 

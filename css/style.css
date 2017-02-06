@@ -406,10 +406,10 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0 0 2rem;
-  color: #e20513;
+  margin: 2rem 0 1rem;
+  color: #1c1c1b;
   font-family: "Montserrat", sans-serif;
-  font-weight: 400; }
+  font-weight: 600; }
 
 h1 {
   font-size: 3rem; }
@@ -432,12 +432,13 @@ h6 {
 small {
   font-size: .875rem; }
 
-ul li {
-  color: #1c1c1b;
+ul,
+ol {
+  margin: 0;
   list-style: none; }
 
-ol li {
-  color: #1c1c1b;
+li a {
+  color: #90908c;
   list-style: none; }
 
 strong,
@@ -451,7 +452,7 @@ i {
 
 p {
   margin: 0 0 1rem;
-  color: #1c1c1b;
+  color: #90908c;
   line-height: 1.6rem; }
 
 img,
@@ -463,7 +464,7 @@ embed {
 blockquote {
   margin: 0 0 1em;
   padding: 1.5em;
-  background: #7e030b;
+  background: #b0040f;
   color: #fff;
   font-size: 1.25rem;
   font-style: italic; }
@@ -2827,35 +2828,47 @@ textarea {
 /*-----------------------------------------------------------------------------
 								$STYLES
 -----------------------------------------------------------------------------*/
-.logo {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  height: 3.5em; }
-
 .red-title {
   color: #fb525d; }
 
+.description-container {
+  width: 90%;
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto; }
+
+.filter {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1; }
+
 nav {
+  position: fixed;
   width: 100%;
   height: 6.25em;
   transition-duration: .5s;
   transition-timing-function: ease;
   background-color: #fff;
   overflow: hidden;
-  z-index: 1; }
-  nav.open {
-    height: auto; }
-  nav ul {
-    margin: 0;
+  z-index: 10; }
+  nav .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 3.5em; }
+  nav .menu {
     padding: 6.25em 0 0;
     text-align: center; }
-    nav ul li:hover {
+    nav .menu li:hover {
       background: #f2f2f2; }
-    nav ul li a {
+    nav .menu li a {
       display: inline-block;
-      padding: 1.25em;
-      color: #90908c; }
+      padding: 1.25em; }
+  nav.open {
+    height: auto; }
 
 .menu-handler {
   position: absolute;
@@ -2922,18 +2935,26 @@ nav {
     font-size: .875em;
     text-align: center; }
   .cover .description-container {
-    width: 90%;
-    max-width: none;
-    margin-left: auto;
-    margin-right: auto;
     position: relative;
     top: 50%;
     transform: translateY(-50%); }
 
-.filter {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 1; }
+.features {
+  padding: 5em 0;
+  text-align: center; }
+  .features .description-container {
+    text-align: center; }
+    .features .description-container h4 {
+      font-size: 1em; }
+  .features .icon-container {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin-top: 2.5em;
+    border-radius: 50%;
+    background-color: #fb525d;
+    text-align: center; }
+    .features .icon-container .icon {
+      color: #fff;
+      font-size: 1.5em;
+      line-height: 60px; }
