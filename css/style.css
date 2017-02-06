@@ -2906,7 +2906,7 @@ nav {
 .cover {
   position: relative;
   height: 40rem;
-  background-image: url("/img/header.jpg");
+  background-image: url("./img/header.jpg");
   background-size: cover; }
   .cover h1 {
     position: absolute;
