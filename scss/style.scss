@@ -11,10 +11,6 @@
 								$STYLES
 -----------------------------------------------------------------------------*/
 
-.red-title {
-	color: $c-primary-lighten;
-}
-
 .description-container {
 	@include wrapper();
 }
@@ -149,19 +145,24 @@ nav {
 
 .cover {
 	position: relative;
-	height: 40rem;
+	height: 50rem;
 	background-image: url('../img/header.jpg');
+	background-position: left center;
 	background-size: cover;
 
-	h1 {
+	&__title {
 		color: $c-white;
 		font-weight: $fw-bold;
 		line-height: 1.2;
 		text-align: center;
 		text-transform: uppercase;
+
+		&--red {
+			color: $c-primary;
+		}
 	}
 
-	p {
+	&__text {
 		color: $c-white;
 		font-size: .875em;
 		text-align: center;
@@ -183,25 +184,49 @@ nav {
 
 	.description-container {
 		text-align: center;
-
-		h4 {
-			font-size: 1em;
-		}
 	}
 
 	.icon-container {
 		display: inline-block;
-		width: 60px;
-		height: 60px;
-		margin-top: 2.5em;
+		width: 65px;
+		height: 65px;
 		border-radius: 50%;
-		background-color: $c-primary-lighten;
+		background-color: $c-primary;
 		text-align: center;
 
 		.icon {
 			color: $c-white;
 			font-size: 1.5em;
-			line-height: 60px;
+			line-height: 65px;
+		}
+	}
+}
+
+.feature {
+
+	&__title {
+		font-size: 1em;
+	}
+
+	&__text {
+		font-weight: $fw-light;
+		font-size: .875em;
+	}
+
+	&__btn {
+		display: inline-block;
+		margin: 1em 0 3em;
+		padding: .75em 1.5em;
+		transition: all .3s ease-in-out;
+		border: 2px solid $c-primary;
+		font-size: .75em;
+		font-weight: $fw-bold;
+		text-transform: uppercase;
+
+
+		&:hover {
+			background-color: $c-primary;
+			color: $c-white;
 		}
 	}
 }

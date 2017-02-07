@@ -464,7 +464,7 @@ embed {
 blockquote {
   margin: 0 0 1em;
   padding: 1.5em;
-  background: #b0040f;
+  background: #c33333;
   color: #fff;
   font-size: 1.25rem;
   font-style: italic; }
@@ -472,11 +472,11 @@ blockquote {
     margin-bottom: 0; }
 
 a {
-  color: #e20513;
+  color: #d35656;
   text-decoration: none;
   cursor: pointer; }
   a:hover {
-    color: #fb525d; }
+    color: #de7e7e; }
   a:focus, a:active {
     outline: none; }
 
@@ -486,7 +486,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #e20513; }
+  color: #d35656; }
 
 label {
   font-size: .875rem; }
@@ -2828,9 +2828,6 @@ textarea {
 /*-----------------------------------------------------------------------------
 								$STYLES
 -----------------------------------------------------------------------------*/
-.red-title {
-  color: #fb525d; }
-
 .description-container {
   width: 90%;
   max-width: none;
@@ -2921,16 +2918,19 @@ nav {
 
 .cover {
   position: relative;
-  height: 40rem;
+  height: 50rem;
   background-image: url("../img/header.jpg");
+  background-position: left center;
   background-size: cover; }
-  .cover h1 {
+  .cover__title {
     color: #fff;
     font-weight: 600;
     line-height: 1.2;
     text-align: center;
     text-transform: uppercase; }
-  .cover p {
+    .cover__title--red {
+      color: #d35656; }
+  .cover__text {
     color: #fff;
     font-size: .875em;
     text-align: center; }
@@ -2944,17 +2944,34 @@ nav {
   text-align: center; }
   .features .description-container {
     text-align: center; }
-    .features .description-container h4 {
-      font-size: 1em; }
   .features .icon-container {
     display: inline-block;
-    width: 60px;
-    height: 60px;
-    margin-top: 2.5em;
+    width: 65px;
+    height: 65px;
     border-radius: 50%;
-    background-color: #fb525d;
+    background-color: #d35656;
     text-align: center; }
     .features .icon-container .icon {
       color: #fff;
       font-size: 1.5em;
-      line-height: 60px; }
+      line-height: 65px; }
+
+.feature__title {
+  font-size: 1em; }
+
+.feature__text {
+  font-weight: 200;
+  font-size: .875em; }
+
+.feature__btn {
+  display: inline-block;
+  margin: 1em 0 3em;
+  padding: .75em 1.5em;
+  transition: all .3s ease-in-out;
+  border: 2px solid #d35656;
+  font-size: .75em;
+  font-weight: 600;
+  text-transform: uppercase; }
+  .feature__btn:hover {
+    background-color: #d35656;
+    color: #fff; }
