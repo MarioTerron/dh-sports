@@ -1,0 +1,52 @@
+/// Features
+// -----------------------------------------------------------------------------
+
+
+.features {
+	@include wrapper (90%);
+	padding: 5em 0;
+	text-align: center;
+}
+
+.feature {
+	.icon-container {
+		display: inline-block;
+		width: $w-icon-container;
+		height: $h-icon-container;
+		border-radius: 50%;
+		background-color: $c-primary;
+		text-align: center;
+
+		span {
+			color: $c-white;
+			font-size: 1.5em;
+			line-height: $h-icon-container;
+		}
+	}
+
+	.title {
+		font-size: 1em;
+	}
+
+	.text {
+		font-size: .875em;
+		font-weight: $fw-regular;
+	}
+
+	.btn {
+		display: inline-block;
+		margin: 1em 0 3em;
+		padding: .75em 1.5em;
+		transition: all .3s ease-in-out;
+		border: 2px solid $c-primary;
+		font-size: .75em;
+		font-weight: $fw-bold;
+		text-transform: uppercase;
+
+
+		&:hover {
+			background-color: $c-primary;
+			color: $c-white;
+		}
+	}
+}

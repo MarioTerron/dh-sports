@@ -1,0 +1,88 @@
+// Footer
+// -----------------------------------------------------------------------------
+
+footer {
+	padding: 6em 0 3em;
+	background-color: $c-primary;
+	text-align: center;
+
+	hr {
+		width: 80%;
+		margin: 2.5em auto;
+		border: 0;
+		border-top: 1px solid $c-white;
+	}
+
+	.wrapper {
+		@include wrapper (80%);
+		// display: flex;
+	}
+
+
+	.description-container {
+		text-align: center;
+		// flex: 1 1 0;
+
+		.title {
+			color: $c-white;
+			font-size: 1em;
+		}
+
+		.text {
+			margin-bottom: 0;
+			color: $c-white;
+			font-size: .875rem;
+		}
+
+		ul {
+			margin-bottom: 4em;
+			padding: 0;
+
+			li {
+				color: $c-white;
+				font-size: .875rem;
+			}
+
+			a {
+				color: $c-white;
+				text-decoration: underline;
+
+				&:hover {
+					color: $c-white-darker;
+				}
+			}
+		 }
+	}
+}
+
+.social-icons {
+	margin-bottom: 1em;
+	padding: 0;
+
+	li {
+		display: inline-block;
+		margin-right: .25em;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		a {
+			display: block;
+			width: 2.375em;
+			height: 2.375em;
+			transition: all .3s ease-in-out;
+			border: .75px solid $c-white;
+			border-radius: 50%;
+			background-color: $c-primary;
+			color: $c-white;
+			line-height: 2.375em;
+			text-align: center;
+
+			&:hover {
+				background-color: $c-white-darker;
+				color: $c-primary;
+			}
+		}
+	}
+}
