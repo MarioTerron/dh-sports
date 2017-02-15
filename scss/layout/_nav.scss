@@ -15,23 +15,21 @@
 		position: absolute;
 		top: 20px;
 		left: 20px;
-		height: 3.5em;
+		height: 55px;
 	}
 
 	ul {
 		padding: $h-nav 0 0;
 		text-align: center;
-	}
 
-	li {
-		&:hover {
+		li:hover {
 			background: $c-white-darker;
 		}
-	}
 
-	a {
-		display: inline-block;
-		padding: 1.25em;
+		a {
+			display: inline-block;
+			padding: 1.25em;
+		}
 	}
 
 	.nav-handler {

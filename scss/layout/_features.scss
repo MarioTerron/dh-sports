@@ -11,8 +11,8 @@
 .feature {
 	.icon-container {
 		display: inline-block;
-		width: $w-icon-container;
-		height: $h-icon-container;
+		width: $w-feature-icon;
+		height: $h-feature-icon;
 		border-radius: 50%;
 		background-color: $c-primary;
 		text-align: center;
@@ -20,7 +20,7 @@
 		span {
 			color: $c-white;
 			font-size: 1.5em;
-			line-height: $h-icon-container;
+			line-height: $h-feature-icon;
 		}
 	}
 

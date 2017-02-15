@@ -32,15 +32,6 @@ body {
 	line-height: 1.5;
 }
 
-.filter {
-	position: absolute;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background-color: $c-shadow;
-	z-index: 1;
-}
-
 
 // Base Elements
 // -----------------------------------------------------------------------------
@@ -125,7 +116,7 @@ embed {
 blockquote {
 	margin: 0 0 1em;
 	padding: 1.5em;
-	background: $c-primary-darken;
+	background: $c-primary-darker;
 	color: $c-white;
 	font-size: 1.25rem;
 	font-style: italic;
@@ -141,12 +132,12 @@ blockquote {
 // Links
 
 a {
-    color: $c-primary;
-    text-decoration: none;
-    cursor: pointer;
+	color: $c-primary;
+	text-decoration: none;
+	cursor: pointer;
 
 	&:hover {
-		color: $c-primary-lighten;
+		color: $c-primary;
 	}
 
 	// Improve readability when focused and hovered in all browsers: h5bp.com/h
