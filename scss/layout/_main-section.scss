@@ -1,13 +1,28 @@
 /// Trail
 // -----------------------------------------------------------------------------
 
-
-.trail {
-	position: relative;
-	height: 50rem;
+#marxa-trail {
 	background-image: url('../img/trail.jpg');
 	background-position: left center;
 	background-size: cover;
+}
+
+#esports-platja {
+	background-image: url('../img/esports-platja.jpg');
+	background-position: center center;
+	background-size: cover;
+}
+
+#altres-esports {
+	background-image: url('../img/altres-esports.jpg');
+	background-position: center center;
+	background-size: cover;
+}
+
+
+.main-section {
+	position: relative;
+	height: 50rem;
 	text-align: center;
 
 	.filter {
@@ -20,30 +35,38 @@
 	}
 
 	.description-container {
-		@include wrapper();
+		@include wrapper(90%);
 		position: absolute;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+
+
+		@include media(md) {
+			@include wrapper(60%);
+		}
+
 	}
 
 	.title {
+		position: relative;
 		margin: 2em 0;
 		color: $c-white;
 		font-size: 2.5em;
+		letter-spacing: 8px;
 		text-transform: uppercase;
-		position: relative;
 
 		&::before {
-			content: '';
 			position: absolute;
-			height: 3px;
-			width: 79px;
 			bottom: -20px;
-			background: $c-primary;
 			left: 49.4%;
+			width: 79px;
+			height: 3px;
 			transform: translateX(-50%);
+			background: $c-primary;
+			content: '';
 		}
+
 	}
 
 	.subtitle {

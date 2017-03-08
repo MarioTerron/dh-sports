@@ -1,0 +1,44 @@
+.partners {
+	padding: 6em 0;
+	background-image: url('../img/parallax.jpeg');
+	background-position: center center;
+	background-size: cover;
+	text-align: center;
+
+	.img-container {
+		margin-top: 4em;
+	}
+
+	.description-container {
+		@include wrapper(90%);
+	}
+
+	.section-title {
+		position: relative;
+		color: $c-white;
+		letter-spacing: 11px;
+		text-transform: uppercase;
+
+		&::before {
+			position: absolute;
+			bottom: -20px;
+			left: 49.4%;
+			width: 79px;
+			height: 3px;
+			transform: translateX(-50%);
+			background: $c-white;
+			content: '';
+		}
+	}
+
+	.title {
+		color: $c-white;
+		font-size: 1.5em;
+	}
+
+	.text {
+		margin-bottom: 0;
+		color: $c-white;
+		font-size: .875rem;
+	}
+}

@@ -392,10 +392,6 @@ body {
   font-size: inherit;
   line-height: 1.5; }
 
-@media (min-width: 48em) {
-  .desktop-wrapper {
-    display: flex; } }
-
 h1,
 h2,
 h3,
@@ -2908,7 +2904,7 @@ textarea {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.35);
     z-index: 1; }
   .cover .description-container {
     width: 90%;
@@ -2919,12 +2915,6 @@ textarea {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
-    @media (min-width: 48em) {
-      .cover .description-container {
-        width: 60%;
-        max-width: none;
-        margin-left: auto;
-        margin-right: auto; } }
   .cover .title {
     color: #fff;
     font-weight: 600;
@@ -2933,99 +2923,18 @@ textarea {
     text-transform: uppercase; }
     .cover .title-red {
       color: #ff5450; }
-  .cover .text {
+  .cover p {
     color: #fff;
     font-size: .875em;
     text-align: center; }
-
-#marxa-trail {
-  background-image: url("../img/trail.jpg");
-  background-position: left center;
-  background-size: cover; }
-
-#esports-platja {
-  background-image: url("../img/esports-platja.jpg");
-  background-position: center center;
-  background-size: cover; }
-
-#altres-esports {
-  background-image: url("../img/altres-esports.jpg");
-  background-position: center center;
-  background-size: cover; }
-
-.main-section {
-  position: relative;
-  height: 50rem;
-  text-align: center; }
-  .main-section .filter {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.75);
-    z-index: 1; }
-  .main-section .description-container {
-    width: 90%;
-    max-width: none;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-    @media (min-width: 48em) {
-      .main-section .description-container {
-        width: 60%;
-        max-width: none;
-        margin-left: auto;
-        margin-right: auto; } }
-  .main-section .title {
-    position: relative;
-    margin: 2em 0;
-    color: #fff;
-    font-size: 2.5em;
-    letter-spacing: 8px;
-    text-transform: uppercase; }
-    .main-section .title::before {
-      position: absolute;
-      bottom: -20px;
-      left: 49.4%;
-      width: 79px;
-      height: 3px;
-      transform: translateX(-50%);
-      background: #ff5450;
-      content: ''; }
-  .main-section .subtitle {
-    color: #fff;
-    font-size: 1.25em; }
-  .main-section .text {
-    color: #d0d0d0;
-    font-size: .875em; }
-  .main-section .btn {
-    display: inline-block;
-    margin: 1em 0 3em;
-    padding: .75em 1.5em;
-    transition: all .3s ease-in-out;
-    border: 2px solid #ff5450;
-    background-color: #ff5450;
-    color: #fff;
-    font-size: .75em;
-    font-weight: 600;
-    text-transform: uppercase; }
-    .main-section .btn:hover {
-      border: 2px solid #ff9f9d;
-      background-color: #ff9f9d; }
 
 .features {
   width: 90%;
   max-width: none;
   margin-left: auto;
   margin-right: auto;
-  padding: 6em 0;
+  padding: 5em 0;
   text-align: center; }
-  @media (min-width: 48em) {
-    .features {
-      display: flex; } }
 
 .feature .icon-container {
   display: inline-block;
@@ -3059,92 +2968,67 @@ textarea {
     background-color: #ff5450;
     color: #fff; }
 
-.partners {
-  padding: 6em 0;
-  background-image: url("../img/parallax.jpeg");
-  background-position: center center;
+.trail {
+  position: relative;
+  height: 50rem;
+  background-image: url("../img/trail.jpg");
+  background-position: left center;
   background-size: cover;
   text-align: center; }
-  .partners .img-container {
-    margin-top: 4em; }
-  .partners .description-container {
+  .trail .filter {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 1; }
+  .trail .description-container {
     width: 90%;
     max-width: none;
     margin-left: auto;
-    margin-right: auto; }
-  .partners .section-title {
-    position: relative;
+    margin-right: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .trail .title {
+    margin: 2em 0;
     color: #fff;
-    letter-spacing: 11px;
-    text-transform: uppercase; }
-    .partners .section-title::before {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    position: relative; }
+    .trail .title::before {
+      content: '';
       position: absolute;
-      bottom: -20px;
-      left: 49.4%;
-      width: 79px;
       height: 3px;
-      transform: translateX(-50%);
-      background: #fff;
-      content: ''; }
-  .partners .title {
-    color: #fff;
-    font-size: 1.5em; }
-  .partners .text {
-    margin-bottom: 0;
-    color: #fff;
-    font-size: .875rem; }
-
-.trainers {
-  width: 90%;
-  max-width: none;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 6em 0;
-  text-align: center; }
-  .trainers .section-title {
-    position: relative;
-    color: #1c1c1b;
-    letter-spacing: 11px;
-    text-transform: uppercase; }
-    .trainers .section-title::before {
-      position: absolute;
-      bottom: -20px;
-      left: 49.4%;
       width: 79px;
-      height: 3px;
-      transform: translateX(-50%);
+      bottom: -20px;
       background: #ff5450;
-      content: ''; }
-
-.trainer .img-container {
-  margin-top: 4em; }
-  .trainer .img-container img {
-    width: 150px;
-    height: 150px;
-    border-radius: 75px; }
-
-.trainer .title {
-  font-size: 1em; }
-
-.trainer .text {
-  font-size: .875em;
-  font-weight: 400; }
-
-.trainer .btn {
-  display: inline-block;
-  margin: 1em 0 3em;
-  padding: .75em 1.5em;
-  transition: all .3s ease-in-out;
-  border: 2px solid #ff5450;
-  font-size: .75em;
-  font-weight: 600;
-  text-transform: uppercase; }
-  .trainer .btn:hover {
+      left: 49.4%;
+      transform: translateX(-50%); }
+  .trail .subtitle {
+    color: #fff;
+    font-size: 1.25em; }
+  .trail .text {
+    color: #d0d0d0;
+    font-size: .875em; }
+  .trail .btn {
+    display: inline-block;
+    margin: 1em 0 3em;
+    padding: .75em 1.5em;
+    transition: all .3s ease-in-out;
+    border: 2px solid #ff5450;
     background-color: #ff5450;
-    color: #fff; }
+    color: #fff;
+    font-size: .75em;
+    font-weight: 600;
+    text-transform: uppercase; }
+    .trail .btn:hover {
+      border: 2px solid #ff9f9d;
+      background-color: #ff9f9d; }
 
 .main-footer {
-  padding: 8em 0 3em;
+  padding: 6em 0 3em;
   background-image: url("../img/parallax.jpeg");
   background-position: center center;
   background-size: cover;
@@ -3159,16 +3043,8 @@ textarea {
     max-width: none;
     margin-left: auto;
     margin-right: auto; }
-    @media (min-width: 48em) {
-      .main-footer .wrapper {
-        display: flex;
-        justify-content: space-between; } }
   .main-footer .description-container {
     text-align: center; }
-    @media (min-width: 48em) {
-      .main-footer .description-container {
-        text-align: left;
-        width: 50%; } }
     .main-footer .description-container .title {
       color: #fff;
       font-size: 1em; }

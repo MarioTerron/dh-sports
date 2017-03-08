@@ -1,30 +1,35 @@
-/// Features
-// -----------------------------------------------------------------------------
-
-
-.features {
+.trainers {
 	@include wrapper (90%);
 	padding: 6em 0;
 	text-align: center;
 
-	@include media(md) {
-		display: flex;
+	.section-title {
+		position: relative;
+		color: $c-black;
+		letter-spacing: 11px;
+		text-transform: uppercase;
+
+		&::before {
+			position: absolute;
+			bottom: -20px;
+			left: 49.4%;
+			width: 79px;
+			height: 3px;
+			transform: translateX(-50%);
+			background: $c-primary;
+			content: '';
+		}
 	}
 }
 
-.feature {
-	.icon-container {
-		display: inline-block;
-		width: $w-feature-icon;
-		height: $h-feature-icon;
-		border-radius: 50%;
-		background-color: $c-primary;
-		text-align: center;
+.trainer {
+	.img-container {
+		margin-top: 4em;
 
-		span {
-			color: $c-white;
-			font-size: 1.5em;
-			line-height: $h-feature-icon;
+		img {
+			width: 150px;
+			height: 150px;
+			border-radius: 75px;
 		}
 	}
 
