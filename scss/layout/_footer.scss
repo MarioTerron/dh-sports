@@ -28,8 +28,8 @@
 		text-align: center;
 
 		@include media(md) {
-			text-align: left;
 			width: 50%;
+			text-align: left;
 		}
 
 		.title {

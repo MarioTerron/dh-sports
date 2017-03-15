@@ -3167,8 +3167,8 @@ textarea {
     text-align: center; }
     @media (min-width: 48em) {
       .main-footer .description-container {
-        text-align: left;
-        width: 50%; } }
+        width: 50%;
+        text-align: left; } }
     .main-footer .description-container .title {
       color: #fff;
       font-size: 1em; }
