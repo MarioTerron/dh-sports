@@ -5,12 +5,22 @@
 	background-size: cover;
 	text-align: center;
 
-	.img-container {
-		margin-top: 4em;
+
+	.flexbox-wrapper {
+		@include wrapper (90%);
+
+		@include media(md) {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+
+			max-width: 64rem;
+			margin-top: 2em;
+		}
 	}
 
-	.description-container {
-		@include wrapper(90%);
+	.img-container {
+		margin-top: 4em;
 	}
 
 	.section-title {
@@ -29,6 +39,17 @@
 			background: $c-white;
 			content: '';
 		}
+	}
+}
+
+.partner {
+	@include media(md) {
+		width: 50%;
+		padding: 0 1em;
+	}
+
+	@include media(lg) {
+		width: 25%;
 	}
 
 	.title {

@@ -9,10 +9,19 @@
 
 	@include media(md) {
 		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		max-width: 64rem;
 	}
 }
 
 .feature {
+	@include media(md) {
+		width: 30%;
+		padding: 0 1em;
+	}
+
 	.icon-container {
 		display: inline-block;
 		width: $w-feature-icon;

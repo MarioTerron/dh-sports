@@ -3025,7 +3025,15 @@ textarea {
   text-align: center; }
   @media (min-width: 48em) {
     .features {
-      display: flex; } }
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 64rem; } }
+
+@media (min-width: 48em) {
+  .feature {
+    width: 30%;
+    padding: 0 1em; } }
 
 .feature .icon-container {
   display: inline-block;
@@ -3065,13 +3073,20 @@ textarea {
   background-position: center center;
   background-size: cover;
   text-align: center; }
-  .partners .img-container {
-    margin-top: 4em; }
-  .partners .description-container {
+  .partners .flexbox-wrapper {
     width: 90%;
     max-width: none;
     margin-left: auto;
     margin-right: auto; }
+    @media (min-width: 48em) {
+      .partners .flexbox-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 64rem;
+        margin-top: 2em; } }
+  .partners .img-container {
+    margin-top: 4em; }
   .partners .section-title {
     position: relative;
     color: #fff;
@@ -3086,19 +3101,26 @@ textarea {
       transform: translateX(-50%);
       background: #fff;
       content: ''; }
-  .partners .title {
-    color: #fff;
-    font-size: 1.5em; }
-  .partners .text {
-    margin-bottom: 0;
-    color: #fff;
-    font-size: .875rem; }
+
+@media (min-width: 48em) {
+  .partner {
+    width: 50%;
+    padding: 0 1em; } }
+
+@media (min-width: 66em) {
+  .partner {
+    width: 25%; } }
+
+.partner .title {
+  color: #fff;
+  font-size: 1.5em; }
+
+.partner .text {
+  margin-bottom: 0;
+  color: #fff;
+  font-size: .875rem; }
 
 .trainers {
-  width: 90%;
-  max-width: none;
-  margin-left: auto;
-  margin-right: auto;
   padding: 6em 0;
   text-align: center; }
   .trainers .section-title {
@@ -3115,6 +3137,23 @@ textarea {
       transform: translateX(-50%);
       background: #ff5450;
       content: ''; }
+  .trainers .flexbox-wrapper {
+    width: 90%;
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto; }
+    @media (min-width: 48em) {
+      .trainers .flexbox-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 64rem;
+        margin-top: 2em; } }
+
+@media (min-width: 48em) {
+  .trainer {
+    width: 30%;
+    padding: 0 1em; } }
 
 .trainer .img-container {
   margin-top: 4em; }
