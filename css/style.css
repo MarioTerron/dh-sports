@@ -3183,51 +3183,28 @@ textarea {
     color: #fff; }
 
 .main-footer {
-  padding: 8em 0 3em;
-  background-image: url("../img/parallax.jpeg");
-  background-position: center center;
-  background-size: cover;
+  padding: 2em 0;
   text-align: center; }
-  .main-footer hr {
-    width: 80%;
-    margin: 2.5em auto;
-    border: 0;
-    border-top: 1px solid #fff; }
-  .main-footer .wrapper {
-    width: 80%;
+  .main-footer .flexbox-wrapper {
+    width: 90%;
     max-width: none;
     margin-left: auto;
     margin-right: auto; }
     @media (min-width: 48em) {
-      .main-footer .wrapper {
+      .main-footer .flexbox-wrapper {
         display: flex;
-        justify-content: space-between; } }
-  .main-footer .description-container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 64rem; } }
+  .main-footer .footer-logo {
+    height: 2.5rem; }
+  .main-footer .text {
+    margin: 0;
+    color: #d0d0d0;
+    font-size: .75rem;
+    line-height: 2.5rem;
     text-align: center; }
-    @media (min-width: 48em) {
-      .main-footer .description-container {
-        width: 50%;
-        text-align: left; } }
-    .main-footer .description-container .title {
-      color: #fff;
-      font-size: 1em; }
-    .main-footer .description-container .text {
-      margin-bottom: 0;
-      color: #fff;
-      font-size: .875rem; }
-    .main-footer .description-container ul {
-      margin-bottom: 4em;
-      padding: 0; }
-      .main-footer .description-container ul li {
-        color: #fff;
-        font-size: .875rem; }
-      .main-footer .description-container ul a {
-        color: #fff;
-        text-decoration: underline; }
-        .main-footer .description-container ul a:hover {
-          color: #f2f2f2; }
   .main-footer .social-icons {
-    margin-bottom: 1em;
     padding: 0; }
     .main-footer .social-icons li {
       display: inline-block;
@@ -3239,19 +3216,20 @@ textarea {
         width: 2.5rem;
         height: 2.5rem;
         transition: all .3s ease-in-out;
-        border: 0.75px solid #fff;
+        border: 0.75px solid #d0d0d0;
         border-radius: 50%;
-        color: #fff;
+        color: #d0d0d0;
         line-height: 2.5rem;
         text-align: center; }
-        .main-footer .social-icons li a:hover {
-          background-color: #fff;
-          color: #ff5450; }
-
-.secondary-footer {
-  padding: 2em 0; }
-  .secondary-footer p {
-    margin: 0;
-    color: #d0d0d0;
-    font-size: .875rem;
-    text-align: center; }
+      .main-footer .social-icons li .icon-facebook:hover {
+        border: 0.75px solid #3b5998;
+        color: #3b5998; }
+      .main-footer .social-icons li .icon-twitter:hover {
+        border: 0.75px solid #55acee;
+        color: #55acee; }
+      .main-footer .social-icons li .icon-instagram:hover {
+        border: 0.75px solid #833ab4;
+        color: #833ab4; }
+      .main-footer .social-icons li .icon-youtube:hover {
+        border: 0.75px solid #cd201f;
+        color: #cd201f; }

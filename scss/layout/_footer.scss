@@ -2,69 +2,34 @@
 // -----------------------------------------------------------------------------
 
 .main-footer {
-	padding: 8em 0 3em;
-	background-image: url('../img/parallax.jpeg');
-	background-position: center center;
-	background-size: cover;
+	padding: 2em 0;
 	text-align: center;
 
-	hr {
-		width: 80%;
-		margin: 2.5em auto;
-		border: 0;
-		border-top: 1px solid $c-white;
-	}
-
-	.wrapper {
-		@include wrapper (80%);
+	.flexbox-wrapper {
+		@include wrapper (90%);
 
 		@include media(md) {
 			display: flex;
+			flex-wrap: wrap;
 			justify-content: space-between;
+
+			max-width: 64rem;
 		}
 	}
 
-	.description-container {
+	.footer-logo {
+		height: $h-social-icon;
+	}
+
+	.text {
+		margin: 0;
+		color: $c-gray;
+		font-size: .75rem;
+		line-height: $h-social-icon;
 		text-align: center;
-
-		@include media(md) {
-			width: 50%;
-			text-align: left;
-		}
-
-		.title {
-			color: $c-white;
-			font-size: 1em;
-		}
-
-		.text {
-			margin-bottom: 0;
-			color: $c-white;
-			font-size: .875rem;
-		}
-
-		ul {
-			margin-bottom: 4em;
-			padding: 0;
-
-			li {
-				color: $c-white;
-				font-size: .875rem;
-			}
-
-			a {
-				color: $c-white;
-				text-decoration: underline;
-
-				&:hover {
-					color: $c-white-darker;
-				}
-			}
-		 }
 	}
 
 	.social-icons {
-		margin-bottom: 1em;
 		padding: 0;
 
 		li {
@@ -80,28 +45,32 @@
 				width: $w-social-icon;
 				height: $h-social-icon;
 				transition: all .3s ease-in-out;
-				border: .75px solid $c-white;
+				border: .75px solid $c-gray;
 				border-radius: 50%;
-				color: $c-white;
+				color: $c-gray;
 				line-height: $h-social-icon;
 				text-align: center;
+			}
 
-				&:hover {
-					background-color: $c-white;
-					color: $c-primary;
-				}
+			.icon-facebook:hover {
+				border: .75px solid $c-facebook;
+				color: $c-facebook;
+			}
+
+			.icon-twitter:hover {
+				border: .75px solid $c-twitter;
+				color: $c-twitter;
+			}
+
+			.icon-instagram:hover {
+				border: .75px solid $c-instagram;
+				color: $c-instagram;
+			}
+
+			.icon-youtube:hover {
+				border: .75px solid $c-youtube;
+				color: $c-youtube;
 			}
 		}
-	}
-}
-
-.secondary-footer {
-	padding: 2em 0;
-
-	p {
-		margin: 0;
-		color: $c-gray;
-		font-size: .875rem;
-		text-align: center;
 	}
 }
