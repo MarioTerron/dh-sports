@@ -2835,17 +2835,38 @@ textarea {
   z-index: 10; }
   .header .nav-logo {
     position: absolute;
-    top: 20px;
+    top: 22.5px;
     left: 20px;
     height: 55px; }
-  .header ul {
+  .header .nav {
     padding: 6.25em 0 0;
     text-align: center; }
-    .header ul li:hover {
-      background: #f2f2f2; }
-    .header ul a {
+    @media (min-width: 66em) {
+      .header .nav {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 20px 0 0; } }
+    .header .nav li:hover {
+      background-color: #f2f2f2; }
+      @media (min-width: 66em) {
+        .header .nav li:hover {
+          background-color: transparent; } }
+    .header .nav a {
       display: inline-block;
-      padding: 1.25em; }
+      padding: 1.25em;
+      color: #909090; }
+      @media (min-width: 66em) {
+        .header .nav a {
+          display: inline;
+          margin-right: 1.25em;
+          padding: 0;
+          line-height: 100px; }
+          .header .nav a:hover {
+            border-bottom: 0.15em solid #ff5450;
+            color: #909090; }
+          .header .nav a:focus, .header .nav a:active {
+            border-bottom: 0.15em solid #ff5450;
+            color: #1c1c1b; } }
   .header .nav-handler {
     position: absolute;
     top: 20px;
@@ -2853,6 +2874,9 @@ textarea {
     width: 60px;
     height: 60px;
     transition-duration: .25s; }
+    @media (min-width: 66em) {
+      .header .nav-handler {
+        display: none; } }
     .header .nav-handler .icon-menu {
       position: absolute;
       top: 30px;
@@ -2899,7 +2923,7 @@ textarea {
 
 .cover {
   position: relative;
-  height: 50rem;
+  height: 50.625rem;
   background-image: url("../img/cover.jpg");
   background-position: center center;
   background-size: cover; }
