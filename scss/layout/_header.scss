@@ -41,6 +41,10 @@
 			padding: 1.25em;
 			color: $c-gray-darker;
 
+			&:hover {
+				color: $c-primary;
+			}
+
 			@include media(lg) {
 				display: inline;
 				margin-right: 1.25em;
@@ -57,7 +61,6 @@
 					border-bottom: .15em solid $c-primary;
 					color: $c-black;
 				}
-
 			}
 		}
 	}

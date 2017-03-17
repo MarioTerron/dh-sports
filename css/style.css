@@ -2855,6 +2855,8 @@ textarea {
       display: inline-block;
       padding: 1.25em;
       color: #909090; }
+      .header .nav a:hover {
+        color: #ff5450; }
       @media (min-width: 66em) {
         .header .nav a {
           display: inline;
@@ -3235,7 +3237,11 @@ textarea {
         justify-content: space-between;
         max-width: 64rem; } }
   .main-footer .footer-logo {
-    height: 2.5rem; }
+    height: 2.5rem;
+    display: none; }
+    @media (min-width: 48em) {
+      .main-footer .footer-logo {
+        display: block; } }
   .main-footer .text {
     margin: 0;
     color: #d0d0d0;
