@@ -2,21 +2,45 @@
 // -----------------------------------------------------------------------------
 
 
-.features {
-	@include wrapper (90%);
+.services {
 	padding: 6em 0;
 	text-align: center;
 
-	@include media(md) {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
+	.section-title {
+		position: relative;
+		color: $c-black;
+		letter-spacing: 11px;
+		text-transform: uppercase;
 
-		max-width: 64rem;
+		&::before {
+			position: absolute;
+			bottom: -20px;
+			left: 49.4%;
+			width: 79px;
+			height: 3px;
+			transform: translateX(-50%);
+			background: $c-primary;
+			content: '';
+		}
+	}
+
+	.flexbox-wrapper {
+		@include wrapper (90%);
+
+		@include media(md) {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+
+			max-width: 64rem;
+			margin-top: 2em;
+		}
 	}
 }
 
-.feature {
+.service {
+	margin-top: 4em;
+
 	@include media(md) {
 		width: 30%;
 		padding: 0 1em;
@@ -48,7 +72,7 @@
 
 	.btn {
 		display: inline-block;
-		margin: 1em 0 3em;
+		margin: 1em 0 0;
 		padding: .75em 1.5em;
 		transition: all .3s ease-in-out;
 		border: 2px solid $c-primary;
