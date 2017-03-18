@@ -1,0 +1,76 @@
+.contact {
+	padding: 6em 0;
+	background-image: url('../img/parallax.jpeg');
+	background-position: center center;
+	background-size: cover;
+	text-align: center;
+
+	.wrapper {
+		@include wrapper(65%);
+
+		@include media(md) {
+			@include wrapper(90%);
+			max-width: 64rem;
+			margin-top: 2em;
+		}
+    }
+
+	.row {
+		margin-bottom: 1.125em;
+	}
+}
+
+.section-title {
+	position: relative;
+	color: $c-white;
+	letter-spacing: 11px;
+	text-transform: uppercase;
+
+	&::before {
+		position: absolute;
+		bottom: -20px;
+		left: 49.4%;
+		width: 79px;
+		height: 3px;
+		transform: translateX(-50%);
+		background: $c-white;
+		content: '';
+	}
+}
+
+
+
+.contact-form {
+	text-align: left;
+
+	.form-description {
+		margin: 6em 0 3em;
+		color: $c-white;
+		text-align: center;
+	}
+
+	.label {
+		margin-bottom: .5em;
+		color: $c-white;
+		font-weight: $fw-bold;
+	}
+
+	.btn {
+		display: inline-block;
+		width: auto;
+		padding: .75em 1.5em;
+		transition: .2s ease;
+		border: 2px solid $c-white;
+		background-color: transparent;
+		color: $c-white;
+		font-size: .75em;
+		font-weight: $fw-bold;
+		text-transform: uppercase;
+		cursor: pointer;
+
+		&:hover {
+			background-color: $c-white;
+			color: $c-primary;
+		}
+	}
+}

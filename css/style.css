@@ -3102,7 +3102,8 @@ textarea {
     border: 2px solid #ff5450;
     font-size: .75em;
     font-weight: 600;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    cursor: pointer; }
     .service .btn:hover {
       background-color: #ff5450;
       color: #fff; }
@@ -3221,6 +3222,69 @@ textarea {
   .trainer .btn:hover {
     background-color: #ff5450;
     color: #fff; }
+
+.contact {
+  padding: 6em 0;
+  background-image: url("../img/parallax.jpeg");
+  background-position: center center;
+  background-size: cover;
+  text-align: center; }
+  .contact .wrapper {
+    width: 65%;
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto; }
+    @media (min-width: 48em) {
+      .contact .wrapper {
+        width: 90%;
+        max-width: none;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 64rem;
+        margin-top: 2em; } }
+  .contact .row {
+    margin-bottom: 1.125em; }
+
+.section-title {
+  position: relative;
+  color: #fff;
+  letter-spacing: 11px;
+  text-transform: uppercase; }
+  .section-title::before {
+    position: absolute;
+    bottom: -20px;
+    left: 49.4%;
+    width: 79px;
+    height: 3px;
+    transform: translateX(-50%);
+    background: #fff;
+    content: ''; }
+
+.contact-form {
+  text-align: left; }
+  .contact-form .form-description {
+    margin: 6em 0 3em;
+    color: #fff;
+    text-align: center; }
+  .contact-form .label {
+    margin-bottom: .5em;
+    color: #fff;
+    font-weight: 600; }
+  .contact-form .btn {
+    display: inline-block;
+    width: auto;
+    padding: .75em 1.5em;
+    transition: .2s ease;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-size: .75em;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer; }
+    .contact-form .btn:hover {
+      background-color: #fff;
+      color: #ff5450; }
 
 .main-footer {
   padding: 2em 0;
